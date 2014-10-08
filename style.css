@@ -48,8 +48,9 @@ header {
 	overflow: hidden;
 	height: 50px;
 	background-color: #3d003d;
+	width: 100%;
 }
-#header-left, #header-right, header ul li {
+#header-left, #header-right, header ul li, #section-wrapper, #aside-wrapper {
 	display: inline-block;
 }
 header ul li {
@@ -97,16 +98,23 @@ header ul li {
 #middle-wrapper {
 	position: relative;
 	color: #333;
+	max-width: 900px;
+	text-align: center;
+	vertical-align: top;
 }
-section {
-	float: left;
+#section-wrapper, #aside-wrapper {
+	margin: 0 auto;
+	text-align: left;
+	vertical-align: top;
+}
+#section-wrapper {
 	width: 500px;	
 }
 #background-direction-wrapper {
-	width: 500px;
+	max-width: 500px;
 	height: 300px;
 	background-image: url('babysweater.jpg');
-	background-size: 500px 400px;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-color: transparent;
 	margin: 20px;
@@ -137,8 +145,6 @@ section p a:hover {
 }
 /***aside***/
 aside {
-	float: right;
-	margin-left: 550px;
 	width: 300px;
 }
 #good-stuff-wrapper {
