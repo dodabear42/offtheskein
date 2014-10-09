@@ -43,14 +43,16 @@ a {
 	max-width: 900px;
 	margin: 0 auto;
 }
-#header-wrapper {
-	position: relative;
-	overflow: hidden;
-	min-height: 50px;
+#header-wrapper, input[type="submit"] {
 	background: -webkit-linear-gradient(#643364, #3d003d);
 	background: -o-linear-gradient(#643364, #3d003d);
 	background: -moz-linear-gradient(#643364, #3d003d);
 	background: linear-gradient(#643364, #3d003d);
+}
+#header-wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 50px;
 	vertical-align: middle;
 	text-align: center;
 	padding: 0;
@@ -215,6 +217,10 @@ button:hover, {
 #content-wrapper p {
 	padding-bottom: 20px;
 }
+#content-wrapper h3 {
+	text-transform: capitalize;
+	padding-bottom: 10px;
+}
 /******Contact - page***/
 #form-wrapper h3 {
 	text-transform: capitalize;
@@ -223,6 +229,23 @@ button:hover, {
 #form-wrapper {
 	text-align: center;
 	margin: 10%;
+}
+input[type="text"], input[type="email"] {
+	height: 30px;
+}
+input[type="text"], input[type="email"], form textarea {
+	margin: 10px auto;
+	border-radius: 5px;
+	border: 1px solid #501950;
+	width: 80%;
+}
+input[type="submit"] {
+	width: 60px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #501950;
+	color: #fff;
+	background: ;
 }
 /***media queries***/
 @media screen and (max-width: 500px) {
