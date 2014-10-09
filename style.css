@@ -41,17 +41,19 @@ a {
 /*******header************/
 #header-wrapper, #middle-wrapper {
 	max-width: 900px;
-	margin: auto;
+	margin: 0 auto;
 }
 #header-wrapper {
 	position: relative;
 	overflow: hidden;
-	height: 50px;
+	min-height: 50px;
 	background-color: #3d003d;
 	vertical-align: middle;
 	text-align: center;
+	padding: 0;
+	border: none;
 }
-header ul li, #section-wrapper, #aside-wrapper {
+header ul li, #section-wrapper, #aside-wrapper, #left-links, #right-links {
 	display: inline-block;
 }
 header ul li {
@@ -66,18 +68,18 @@ header ul li {
 	height: 50px;
 	width: 150px;
 	text-align: center;
+	margin: auto;
 }
 #first-link {
 	border-left: 1px solid #501950;
 }
 .link-wrapper {
-	border-right: 1px solid #501950;
-}
-.link-wrapper {
 	width: 100%;
-	height: 46px;
+	height: 50px;
 	text-align: center;
 	margin: auto;
+	border-right: 1px solid #501950;
+	border-top: 1px solid #501950;
 }
 .link-wrapper h5 {
 	color: #c0c0c0;
@@ -96,8 +98,11 @@ header ul li {
 	text-align: left;
 	vertical-align: top;
 }
+#section-wrapper, #background-direction-wrapper, #direction-wrapper, section p {
+	width: 100%;
+}
 #section-wrapper {
-	width: 500px;	
+	max-width: 500px;
 }
 #background-direction-wrapper {
 	max-width: 500px;
@@ -112,13 +117,14 @@ header ul li {
 #direction-wrapper {
 	margin: auto;
 	background: rgba(255, 255, 255, 0.5);
-	width: 320px;
+	max-width: 320px;
 	height: 180px;
 	border-radius: 5px;
 }
 section p {
-	width: 300px;
-	height: 200px;
+	max-width: 300px;
+	max-height: 200px;
+	height: 100%;
 	font-size: 25px;
 	margin: 0 auto;
 	font-weight: bold;
@@ -199,6 +205,11 @@ button:hover, {
 	padding-top: 5px;
 }
 /***media queries***/
-@media screen and (max-width: 820px) {
-	
+@media screen and (max-width: 500px) {
+	#left-links, #right-links {
+		max-width: 160px;
+	}
+	.link-wrapper {
+		border: 1px solid #501950;
+	}
 }
