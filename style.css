@@ -47,7 +47,10 @@ a {
 	position: relative;
 	overflow: hidden;
 	min-height: 50px;
-	background-color: #3d003d;
+	background: -webkit-linear-gradient(#643364, #3d003d);
+	background: -o-linear-gradient(#643364, #3d003d);
+	background: -moz-linear-gradient(#643364, #3d003d);
+	background: linear-gradient(#643364, #3d003d);
 	vertical-align: middle;
 	text-align: center;
 	padding: 0;
@@ -111,7 +114,7 @@ header ul li {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-color: transparent;
-	margin: 20px;
+	margin: 20px auto;
 	padding-top: 100px;
 }
 #direction-wrapper {
@@ -203,6 +206,23 @@ button:hover, {
 }
 .lesson-intro {
 	padding-top: 5px;
+}
+/*****About Me - page***/
+#content-wrapper {
+	margin: 10%;
+	text-align: left;
+}
+#content-wrapper p {
+	padding-bottom: 20px;
+}
+/******Contact - page***/
+#form-wrapper h3 {
+	text-transform: capitalize;
+	padding-bottom: 10px;
+}
+#form-wrapper {
+	text-align: center;
+	margin: 10%;
 }
 /***media queries***/
 @media screen and (max-width: 500px) {
