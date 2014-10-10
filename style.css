@@ -111,13 +111,14 @@ header ul li {
 }
 #background-direction-wrapper {
 	max-width: 500px;
-	height: 300px;
+	height: auto;
 	background-image: url('babysweater.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-color: transparent;
 	margin: 20px auto;
-	padding-top: 100px;
+	padding: 20% 0;
+	position: relative;
 }
 #direction-wrapper {
 	margin: auto;
