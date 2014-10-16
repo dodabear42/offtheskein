@@ -200,6 +200,9 @@ button:hover {
 	margin-top: 20px;
 	border-top: 1px solid #f0f0f0;
 }
+#knitting-thumbs, #crochet-thumbs {
+	display: none;
+}
 .thumb-image {
 	height: 50px;
 	width: 50px;
